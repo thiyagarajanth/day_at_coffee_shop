@@ -31,6 +31,7 @@ class Order
 			puts "Tax: #{tax}"
 			puts "Total: #{bill_amount - tax}"
 			puts '******************************************'
+			bill_amount - tax
 		end
 
 		private
