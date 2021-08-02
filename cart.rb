@@ -10,9 +10,9 @@ class Cart
 		if ordered_item && ordered_item[:availability] > 0
 			items.append item
 			ordered_item[:availability] = ordered_item[:availability]-1
+			return 'Item Added in cart'
 		else
 			return 'This item currently unavailable'
 		end
-		nil
 	end
 end
