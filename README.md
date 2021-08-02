@@ -2,4 +2,8 @@
 
 Run in this program using below command
 
-# ruby checkout.rb
+Prerequests: please install rspec before run this spec test
+
+gem install rspec
+
+ruby checkout.rb
