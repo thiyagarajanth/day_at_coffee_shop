@@ -30,7 +30,6 @@ class Offer
 			if discount_item[:discount_type] == 'cash'
 				discount_item[:value]*discount
 			elsif discount_item[:discount_type] == 'percent'
-				get_percentage_value(item)
 				price_per_item = Shop.item_cost(item)
 				bill = price_per_item * (discount_item[:quantity] * discount)
 				bill - ((bill - discount_item[:value]).to_f / 100).round(2)
